@@ -44,8 +44,6 @@ function lcm(arr) {
   return arr.reduce((a, b) => (a * b) / gcd(a, b));
 }
 
-// AI Fallback
-
 async function getAIResponse(question) {
   try {
     if (!process.env.GEMINI_API_KEY) {
